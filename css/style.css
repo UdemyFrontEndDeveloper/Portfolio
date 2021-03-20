@@ -12,32 +12,32 @@
       clear: both;
     }
 
-    header {
+    .mainHeader {
       position: relative;
-      background-color: #29a6dc;
+      background-image: url(/images/photo1.png);
       height: 100vh;
       overflow: hidden;
       max-width: 1920px;
       margin: 0 auto;
     }
 
-    header>* {
+    .mainHeader>* {
       position: absolute;
+      font-family: 'Anton',
+        sans-serif;
     }
 
-    header img {
+    .mainHeader img {
       height: 50%;
       bottom: 0;
       right: 0;
     }
 
-    header div.welcome {
+    .headerIn div.welcome {
       z-index: 1;
       top: 7%;
       left: 5%;
       right: 5%;
-      font-family: 'Saira Condensed',
-        sans-serif;
       color: white;
       font-size: 40px;
       font-weight: bold;
@@ -46,18 +46,17 @@
     }
 
 
-    header h1 {
+    .headerIn h1 {
       margin-top: 15px;
       font-size: 20px;
     }
 
-    header h2 {
+    .headerIn h2 {
       font-size: 20px;
       font-weight: normal;
     }
 
-    header button {
-      font-family: 'Saira', sans-serif;
+    .headerIn button {
       font-weight: 300;
       line-height: 32px;
       padding: 0 20px;

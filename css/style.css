@@ -168,127 +168,52 @@
 
 
 
-/* Sekcja 1 nasze cechy*/
+/* Section 1 languages*/
 
 .features {
   max-width: 1600px;
-  margin: 50px auto 0;
-  padding: 5%;
+  margin: 30px auto 0;
+  padding: 0 5%;
   text-align: center;
-
+  font-family: 'El Messiri', sans-serif;
+  font-size: 20px;
+  text-transform: uppercase;
 }
 
 .features h1 {
-  font-family: 'Saira Condensed',
-    sans-serif;
-  font-size: 26px;
-  text-transform: uppercase;
+  font-size: 1.3em;
   margin-bottom: 15px;
-
 }
 
 .features h2 {
-  font-family: 'Saira Condensed',
-    sans-serif;
-  font-size: 22px;
-  text-transform: uppercase;
+  font-size: 1em;
 }
 
 .features p {
-  font-family: 'Saira',
-    sans-serif;
-  font-size: 12px;
-  font-weight: 300;
-  margin: 20px 0;
+  font-size: 0.7em;
+  margin: 10px 0;
+  text-align: justify;
 }
 
 .features img {
   width: 100%;
-  margin: 5px 0;
+  margin: 10px 0 20px;
   max-width: 375px;
 }
 
-@media (min-width:360px) {
-  .features h1 {
-    font-size: 28px;
-  }
-
-  .features h2 {
-    font-size: 24px;
-  }
-
-  .features p {
-    font-size: 14px;
-  }
-}
-
-@media (min-width:768px) {
-  .features h1 {
-    font-size: 36px;
-  }
-
-  .features h2 {
-    font-size: 28px;
-  }
-
-  .features p {
-    font-size: 18px;
-  }
-}
-
-@media (min-width:1024px) {
+@media (orientation: landscape) {
   .features {
-    margin-top: 50px;
-    padding: 5% 2%;
-    text-align: center;
-
+    margin: 5% 0;
   }
 
-  .feature {
+  .features .feature {
     float: left;
-    width: 33%;
-    padding: 20px;
-  }
-
-  .features h1 {
-    font-size: 36px;
-  }
-
-  .features h2 {
-    font-size: 22px;
-  }
-
-  .features p {
-    font-size: 16px;
-    line-height: 120%;
-    padding: 0 10px;
+    width: 28%;
+    margin-left: 5%;
   }
 }
 
-@media (min-width:1600px) {
-
-
-  .feature {
-
-    padding: 20px 50px;
-  }
-
-  .features h1 {
-    font-size: 60px;
-  }
-
-  .features h2 {
-    font-size: 32px;
-  }
-
-  .features p {
-    font-size: 21px;
-    line-height: 140%;
-    padding: 0 10px;
-  }
-}
-
-.portfolio {
+/* .portfolio {
   background-color: black;
   padding: 10px 0 30px;
 }
@@ -421,7 +346,7 @@
   .portfolio .project {
     margin-bottom: 40px;
   }
-}
+} */
 
 
 /* Sekcja Slogan*/

@@ -113,31 +113,6 @@
   }
 }
 
-@media (orientation: landscape) and (min-width: 712px) {
-
-  .headerIn .text p {
-    margin-top: 30px;
-    font-size: 60px;
-  }
-
-  .headerIn .text h1 {
-    margin-top: 20px;
-    font-size: 32px;
-  }
-
-  .headerIn .text h2 {
-    margin: 350px 50px 0;
-    font-weight: normal;
-  }
-
-  .headerIn .text button {
-    margin-top: 50px;
-    line-height: 60px;
-    font-size: 0.5em;
-  }
-}
-
-
 @media (orientation: landscape) and (min-width: 1024px) {
 
   .headerIn .text p {
@@ -172,6 +147,7 @@
 
 .features {
   max-width: 1600px;
+  min-height: 80vh;
   margin: 30px auto 0;
   padding: 0 5%;
   text-align: center;
@@ -181,12 +157,14 @@
 }
 
 .features h1 {
-  font-size: 1.3em;
-  margin-bottom: 15px;
+  font-size: 2em;
+  margin-bottom: 30px;
 }
 
 .features h2 {
-  font-size: 1em;
+  font-size: 1.5em;
+  line-height: 100%;
+  padding: 20px 0;
 }
 
 .features p {
@@ -213,345 +191,155 @@
   }
 }
 
-/* .portfolio {
-  background-color: black;
-  padding: 10px 0 30px;
-}
+/* Section Slogan*/
 
-.portfolio h1 {
-  font-size: 28px;
-  font-family: 'Saira Condensed',
-    sans-serif;
-  text-transform: uppercase;
-  color: white;
-  text-align: center;
-  padding: 10px 20px;
-  margin-bottom: 15px;
-}
-
-.portfolio .web img {
-  width: 100%;
-}
-
-.portfolio .about {
-  color: white;
-  font-family: 'Saira',
-    sans-serif;
-  font-weight: normal;
-  padding: 10px 20px 20px 0;
-  text-align: left;
-}
-
-.portfolio .about h2 {
-  font-size: 18px;
-  border-bottom: 2px solid white;
-  margin-bottom: 12px;
-  padding-bottom: 6px;
-  text-indent: 20px;
-}
-
-.portfolio .about p {
-  font-size: 12px;
-  padding-left: 20px;
-}
-
-.portfolio .project {
-  max-width: 1400px;
-  margin: 0 auto 20px;
-}
-
-.portfolio .project:nth-of-type(odd) {
-  background-color: #ff4f2c;
-}
-
-.portfolio .project:nth-of-type(even) {
-  background-color: #29a6dc;
-}
-
-@media (min-width:768px) {
-
-  .portfolio h1 {
-    font-size: 40px;
-  }
-
-  .portfolio .about h2 {
-    font-size: 28px;
-    text-indent: 40px;
-  }
-
-  .portfolio .about p {
-    font-size: 18px;
-    padding-left: 40px;
-  }
-
-  .portfolio .project {
-    margin-bottom: 40px;
-  }
-
-}
-
-@media (orientation: landscape) {
-
-  .web,
-  .about {
-    width: 50%;
-    float: left;
-  }
-
-  .web img {
-    display: block;
-  }
-
-  .portfolio .project:nth-of-type(even) .web {
-    float: right;
-
-  }
-
-  .portfolio .project:nth-of-type(even) .about {
-    padding-right: 0;
-  }
-
-  .portfolio .project:nth-of-type(even) .about p {
-    padding-right: 20px;
-  }
-
-  .portfolio .project:nth-of-type(even) .about h2 {
-    text-indent: 0;
-    margin-left: 40px;
-  }
-
-
-}
-
-
-@media (orientation: landscape) and (min-width: 1400px) {
-  .portfolio h1 {
-    font-size: 60px;
-    padding: 30px 0;
-  }
-
-  .portfolio .about h2 {
-    padding-top: 50px;
-    font-size: 28px;
-    text-indent: 40px;
-    margin-bottom: 50px;
-  }
-
-  .portfolio .about p {
-    font-size: 18px;
-    padding-left: 40px;
-    line-height: 180%;
-  }
-
-  .portfolio .project {
-    margin-bottom: 40px;
-  }
-} */
-
-
-/* Sekcja Slogan*/
-
-.slogan {
-  text-align: center;
+.motto {
+  position: relative;
   background-image: url(../images/motto.jpg);
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-
+  min-height: 80vh;
+  font-family: 'El Messiri',
+    sans-serif;
+  font-size: 20px;
   color: white;
-}
-
-.slogan h1 {
-  font-family: 'Saira Condensed', sans-serif;
-  font-size: 26px;
   text-transform: uppercase;
-  margin-bottom: 25px;
-
+  text-align: center;
+  font-style: italic;
+  font-weight: bold;
 }
 
-.slogan p {
-  font-family: 'Saira', sans-serif;
-  font-size: 18px;
+.motto h1 {
+  position: absolute;
+  top: 5%;
+  left: 0;
+  right: 0;
+  font-size: 1.8em;
 }
 
-.slogan p.author {
-  margin-top: 20px;
-  font-size: 12px;
+.motto p.text {
+  position: absolute;
+  top: 50%;
+  left: 17%;
+  right: 17%;
+  transform: translateY(-50%);
+  font-size: 1em;
 }
 
-.slogan .bg {
-  padding: 30px 10px;
-  background-color: rgba(0, 63, 114, 0.5);
-  /*  #003f72*/
+.motto p.author {
+  position: absolute;
+  top: 85%;
+  left: 70%;
+  right: 3%;
+  font-weight: normal;
+  font-size: 0.7em;
 }
 
-@media (orientation: landscape) {
-  .slogan p {
-    width: 70%;
-    margin-left: auto;
-    margin-right: auto;
-  }
+.motto_background {
+  height: 80vh;
+  background-color: rgba(4, 41, 71, 0.4);
+  /* #003f72 */
 }
 
-@media (min-width: 768px) {
-
-  .slogan .bg {
-    padding: 50px 10px;
-
-  }
-
-  .slogan h1 {
-    font-size: 48px;
-    margin-bottom: 35px;
-
-  }
-
-  .slogan p {
-    font-size: 26px;
-    width: 60%;
-    margin: 0 auto;
-  }
-
-  .slogan p.author {
-    margin-top: 40px;
-    font-size: 18px;
-  }
-}
-
-@media (min-width: 1024px) {
-
-  .slogan .bg {
-    padding: 80px 10px;
-
-  }
-
-  .slogan h1 {
-    font-size: 60px;
-    margin-bottom: 55px;
-
-  }
-
-  .slogan p {
+@media (orientation: landscape) and (min-width: 1024px) {
+  .motto {
     font-size: 40px;
-    width: 50%;
-  }
-
-  .slogan p.author {
-    margin-top: 40px;
-    font-size: 26px;
   }
 }
 
-/* Sekcja hobby*/
+/* Section myHobby*/
 
 .hobby {
-  max-width: 1920px;
+  max-width: 1600px;
   margin: 0 auto;
+  font-family: 'El Messiri',
+    sans-serif;
+  font-size: 20px;
 }
 
-.hobby .item {
-  height: 25vh;
-
-}
-
-.hobby .item {
+.wrapper .item {
+  min-height: 30vh;
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.hobby .item:nth-of-type(1) {
-  background-image: url(../images/hobby1.jpg);
+.wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
-.hobby .item:nth-of-type(2) {
-  background-image: url(../images/hobby2.jpg);
+.wrapper .item:nth-of-type(1) {
+  background-image: url(../images/hiking.jpg);
 }
 
-.hobby .item:nth-of-type(3) {
-  background-image: url(../images/hobby3.jpg);
+.wrapper .item:nth-of-type(2) {
+  background-image: url(../images/programming.png);
 }
 
-.hobby .item:nth-of-type(4) {
-  background-image: url(../images/hobby4.jpg);
+.wrapper .item:nth-of-type(3) {
+  background-image: url(../images/reading.png);
+}
+
+.wrapper .item:nth-of-type(4) {
+  background-image: url(../images/dancing.jpg);
 }
 
 
-.hobby .item p {
-  font-family: 'saira', sans-serif;
+.wrapper .item p {
   color: white;
   text-align: center;
-  /*  line-height: 25vh;*/
   text-shadow: 0 0 4px black;
   background-color: rgba(0, 0, 0, .5);
-  font-size: 20px;
-  padding: 5px 0;
+  font-size: 1em;
+  padding: 10px 0;
 }
 
 .hobby h1 {
-  font-family: 'saira condensed', sans-serif;
   padding: 20px;
   text-align: center;
-  font-size: 36px;
+  font-size: 2em;
   text-transform: uppercase;
+  font-style: italic;
 }
 
-@media (min-width:533px) {
-  .hobby .item {
-    float: left;
+
+@media (orientation: landscape) {
+  .wrapper {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .wrapper .item {
+    min-height: 50vh;
     width: 50%;
-    height: 40vh;
   }
 }
 
-@media (min-width:768px) {
+@media (orientation: landscape) and (min-width: 1024px) {
 
-  .hobby h1 {
-    font-size: 48px;
-    margin-top: 40px;
-    margin-bottom: 35px;
-
-  }
-
-  .hobby .item p {
-    font-size: 30px;
-    padding: 15px 0;
-  }
-}
-
-@media (min-width: 1024px) {
-  .hobby .item p {
-    padding: 0;
-    line-height: 40vh;
-    opacity: 0;
+  .wrapper .item {
     transition: 1s;
-    cursor: default;
+    background-size: 110%
   }
 
-  .hobby .item:hover p {
+  .wrapper .item p {
+    transition: 1s;
+  }
+
+  .wrapper .item p {
+    line-height: 50vh;
+    opacity: 0;
+    padding: 0;
+  }
+
+  .wrapper .item:hover p {
     opacity: 1;
   }
 
-  .hobby .item {
-    background-size: 100%;
-    transition: 1s;
-  }
-
-  .hobby .item:hover {
-    background-size: 130%;
-  }
-
-}
-
-@media (min-width: 1600px) {
-  .hobby h1 {
-    font-size: 60px;
-    margin-top: 50px;
-    margin-bottom: 45px;
-
-  }
-
-  .hobby .item p {
-    font-size: 40px;
+  .wrapper .item:hover {
+    background-size: 140%;
   }
 }
 
@@ -694,9 +482,10 @@
 
 
 footer {
-  background-color: #29a6dc;
+  background-color: rgb(59, 59, 236);
   color: white;
-  font-family: saira, sans-serif;
+  font-family: 'El Messiri',
+    sans-serif;
   text-align: center;
   padding: 20px;
   font-size: 20px;

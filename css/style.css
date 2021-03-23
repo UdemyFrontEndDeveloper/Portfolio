@@ -325,13 +325,11 @@
   }
 
   .wrapper .item p {
-    transition: 1s;
-  }
-
-  .wrapper .item p {
+    font-size: 2em;
     line-height: 50vh;
     opacity: 0;
     padding: 0;
+    transition: 1s;
   }
 
   .wrapper .item:hover p {
@@ -343,146 +341,99 @@
   }
 }
 
+/* My projects in JavaScript */
 
-/* sekcja contact */
-
-.contact {
-  background-color: #000;
-  padding: 30px 20px;
-}
-
-.contact h1 {
-  font-family: 'Saira Condensed',
+.projects {
+  min-height: 80vh;
+  font-family: 'El Messiri',
     sans-serif;
-  font-size: 26px;
-  text-transform: uppercase;
-  margin-bottom: 15px;
-  color: white;
-  text-align: center;
-}
-
-.contact .wrap {
-  padding-top: 20px;
-  max-width: 1024px;
-  margin: 0 auto;
-}
-
-.contact input,
-.contact button,
-.contact textarea {
-  width: 100%;
-  margin-bottom: 25px;
-  font-family: saira, sans-serif;
-  font-size: 12px;
-  padding: 5px;
-}
-
-.contact input {
-
-  height: 36px;
-
-}
-
-.contact textarea {
-  height: 120px
-}
-
-.contact button {
-  font-size: 14px;
-  line-height: 40px;
-  background-color: black;
-  color: white;
-  border: 2px solid white;
-}
-
-.contact .socials {
-  padding-top: 30px;
-  font-size: 0;
-}
-
-.contact .social {
-
-  padding: 10px 0;
-  color: white;
-  font-family: saira condensed, sans-serif;
-
-}
-
-.contact .social img {
-  float: left;
-
-}
-
-.contact .social span {
-  line-height: 72px;
-  padding-left: 20px;
-  float: left;
   font-size: 20px;
 }
 
-@media (min-width: 533px) {
-  .contact .social {
-    display: inline-block;
-    width: 50%;
-  }
+.projects,
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
-@media (min-width: 1024px) {
-
-  .contact h1 {
-    font-size: 60px;
-    padding: 30px 0;
-  }
-
-  .contact form,
-  .contact .socials {
-    float: left;
-    width: 50%;
-    padding: 0 20px
-  }
-
-  .contact .social {
-    display: block;
-    width: 50%;
-    margin: 0 auto;
-  }
-
-  .contact input,
-  .contact button,
-  .contact textarea {
-    margin-bottom: 35px;
-
-  }
-
-  .contact input {
-
-    height: 46px;
-    font-size: 24px;
-
-  }
-
-  .contact textarea {
-    height: 180px;
-    font-size: 24px;
-  }
-
-  .contact button {
-    font-size: 20px;
-    line-height: 50px;
-    transition: .3s;
-    cursor: pointer;
-
-  }
-
-  .contact button:hover {
-    color: black;
-    background-color: #fff;
-  }
+.projects .fas {
+  padding: 8px;
 }
 
+.projects h1 {
+  padding: 12px;
+  font-size: 1.5em;
+}
+
+.projects h2 {
+  padding: 0 20px;
+  font-size: 1em;
+}
+
+.project img {
+  max-width: 100vw;
+  padding: 20px;
+}
+
+.project a {
+  margin: 0 auto;
+  text-decoration: none;
+  color: white;
+  padding: 10px 20px;
+  background-color: black;
+  width: max-content;
+  border: 1px solid inherit;
+  border-radius: 10px;
+  transform: scale(0.8);
+  transition: 1s;
+}
+
+.project a:hover {
+  transform: scale(1);
+}
+
+@media (orientation: landscape) and (min-width: 1280px) {
+  .project {
+    flex-direction: row;
+  }
+
+  .project:nth-of-type(1) {
+    border-bottom: 5px solid rgb(11, 11, 85);
+
+  }
+
+  .project a {
+    padding: 50px;
+    align-self: center;
+    flex-grow: 1;
+    font-size: 1.3em;
+  }
+
+  .project img {
+    padding: 40px;
+    flex-grow: 3;
+  }
+
+  .projects h1,
+  .projects h2 {
+    background-color: rgb(11, 11, 85);
+    color: white;
+    font-size: 3em;
+  }
+
+  .projects h2 {
+    font-size: 2em;
+  }
+
+}
+
+
+/* Footer */
 
 footer {
-  background-color: rgb(59, 59, 236);
+  background-color: rgb(11, 11, 85);
   color: white;
   font-family: 'El Messiri',
     sans-serif;

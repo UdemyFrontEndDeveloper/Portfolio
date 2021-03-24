@@ -35,13 +35,14 @@
 .headerIn .text {
   position: absolute;
   top: 0;
-  left: 0;
+  left: -200%;
   right: 0;
   font-family: 'El Messiri', sans-serif;
   color: white;
   font-size: 40px;
   text-align: center;
   text-transform: uppercase;
+  transition: 1s;
 }
 
 .headerIn .text>* {
@@ -58,7 +59,8 @@
 }
 
 .headerIn .text h2 {
-  margin-top: 50px;
+  margin: 50px auto 0;
+  max-width: 220px;
   font-weight: normal;
 }
 
@@ -77,7 +79,8 @@
 }
 
 .headerIn .text button:hover {
-  background-color: black;
+  background-color: white;
+  color: black;
   border: 2px solid black;
 }
 
@@ -94,6 +97,7 @@
   }
 
   .headerIn .text h2 {
+    max-width: 100%;
     margin-top: 150px;
     font-weight: normal;
   }
@@ -156,6 +160,11 @@
   text-transform: uppercase;
 }
 
+.feature {
+  opacity: 0;
+  transition: 2s;
+}
+
 .features h1 {
   font-size: 2em;
   margin-bottom: 30px;
@@ -213,18 +222,20 @@
 .motto h1 {
   position: absolute;
   top: 5%;
-  left: 0;
+  left: -200%;
   right: 0;
   font-size: 1.8em;
+  transition: 2s;
 }
 
 .motto p.text {
   position: absolute;
   top: 50%;
-  left: 17%;
-  right: 17%;
+  left: 200%;
+  margin: 0 5%;
   transform: translateY(-50%);
   font-size: 1em;
+  transition: 2s;
 }
 
 .motto p.author {
@@ -242,9 +253,19 @@
   /* #003f72 */
 }
 
+@media (orientation: landscape) {
+  .motto p.text {
+    margin: 0 10%;
+  }
+}
+
 @media (orientation: landscape) and (min-width: 1024px) {
   .motto {
     font-size: 40px;
+  }
+
+  .motto p.text {
+    margin: 0 15%;
   }
 }
 
@@ -341,6 +362,7 @@
   }
 }
 
+/* Section projects */
 /* My projects in JavaScript */
 
 .projects {
@@ -358,8 +380,8 @@
   text-align: center;
 }
 
-.projects .fas {
-  padding: 8px;
+.projects span {
+  color: yellow;
 }
 
 .projects h1 {
@@ -438,9 +460,19 @@ footer {
   font-family: 'El Messiri',
     sans-serif;
   text-align: center;
-  padding: 20px;
+  padding: 10px;
   font-size: 20px;
 }
 
+footer .fas {
+  padding: 10px;
+  font-size: 1.5em;
+}
+
+@media (orientation: landscape) and (min-width: 1024px) {
+  footer {
+    padding: 20px;
+  }
+}
 
 /**/

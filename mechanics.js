@@ -30,7 +30,7 @@ if(scrollPoz > feature3Poz + feature3Height - windowHeight*1.3){
     $feature3.addClass("activeFeature");
 }
 
-if(scrollPoz < 100){
+if(scrollPoz < 200){
     $feature1.removeClass("activeFeature");
     $feature2.removeClass("activeFeature");
     $feature3.removeClass("activeFeature");

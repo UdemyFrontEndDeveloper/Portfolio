@@ -256,25 +256,26 @@ body {
   left: 0;
   right: 0;
   font-size: 1.8em;
-  transition: 2s;
+  transition: 1s;
+  transform: scale(0);
 }
 
-.activeH1 {
-  left: 0;
+.motto h1.activeH1 {
+  transform: scale(1);
 }
 
 .motto p.text {
   position: absolute;
   top: 50%;
-  left: 0;
-  margin: 0 5%;
-  transform: translateY(-50%);
+  left: 5%;
+  right: 5%;
+  transform: translateY(-50%) scale(0);
   font-size: 1em;
   transition: 2s;
 }
 
-.activeP {
-  left: 0;
+.motto p.text.activeP {
+  transform: translateY(-50%) scale(1);
 }
 
 .motto p.author {
@@ -299,11 +300,12 @@ body {
 }
 
 @media (orientation: landscape) and (min-width: 1024px) {
-  .motto {
-    font-size: 40px;
+  .motto h1 {
+    font-size: 3em;
   }
 
   .motto p.text {
+    font-size: 1.5em;
     margin: 0 15%;
   }
 }

@@ -333,16 +333,39 @@ body {
   font-size: 20px;
 }
 
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  opacity: 0;
+}
+
+.wrapper.activeWrapper {
+  opacity: 1;
+  animation: wrapperAnimation 1s linear;
+}
+
+@keyframes wrapperAnimation {
+  0% {
+    opacity: 0;
+    transform: scale(0);
+  }
+
+  50% {
+    transform: scale(1.2);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+}
+
 .wrapper .item {
   min-height: 30vh;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.wrapper {
-  display: flex;
-  flex-direction: column;
 }
 
 .wrapper .item:nth-of-type(1) {
@@ -424,19 +447,6 @@ body {
   font-family: 'El Messiri',
     sans-serif;
   font-size: 20px;
-  opacity: 1;
-}
-
-.project {
-  opacity: 1;
-}
-
-.activeProjects {
-  opacity: 1;
-}
-
-.activeProject {
-  opacity: 1;
 }
 
 .projects,
@@ -462,8 +472,9 @@ body {
 }
 
 .project img {
+  box-shadow: 0 0 10px 0 black;
   max-width: 100vw;
-  padding: 20px;
+  margin: 20px;
 }
 
 .project a {
@@ -486,11 +497,6 @@ body {
 @media (orientation: landscape) and (min-width: 1280px) {
   .project {
     flex-direction: row;
-  }
-
-  .project:nth-of-type(1) {
-    border-bottom: 5px solid rgb(11, 11, 85);
-
   }
 
   .project a {

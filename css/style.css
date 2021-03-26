@@ -171,14 +171,14 @@ body {
 .feature1,
 .feature2,
 .feature3 {
-  opacity: 0;
-  transition: 2s;
+  transform: scale(0);
+  transition: 1s;
 }
 
 .feature1.activeFeature,
 .feature2.activeFeature,
 .feature3.activeFeature {
-  opacity: 1;
+  transform: scale(1);
 }
 
 .features h1 {
@@ -204,6 +204,14 @@ body {
 }
 
 @media (orientation: landscape) {
+
+  .feature1,
+  .feature2,
+  .feature3 {
+    max-height: 80vh;
+    margin-bottom: 100px;
+  }
+
   .features h2 {
     padding: 0;
   }
@@ -222,12 +230,17 @@ body {
     margin: 5% 0;
   }
 
-  .features .feature1,
-  .features .feature2,
-  .features .feature3 {
+  .features p {
+    margin: 50px 0;
+  }
+
+  .feature1,
+  .feature2,
+  .feature3 {
     float: left;
     width: 28%;
     margin-left: 5%;
+    margin-bottom: 0;
   }
 }
 

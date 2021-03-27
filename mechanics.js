@@ -15,8 +15,8 @@ const $motto = $(".motto");
 const $mottoH1 = $(".motto h1");
 const $mottoP = $(".motto p.text");
 const $hobbyWrapper = $(".wrapper");
-// const $img1 = $(".projects img:nth-of-type(1)");
-// const $img2 = $("#2");
+const $img1 = $(".project .img1");
+const $img2 = $(".project .img2");
 
 
 const feature1Height = $feature1.innerHeight();
@@ -24,16 +24,16 @@ const feature2Height = $feature2.innerHeight();
 const feature3Height = $feature3.innerHeight();
 const mottoHeight = $motto.innerHeight();
 const hobbyWrapperHeight = $hobbyWrapper.innerHeight();
-// const img1Height = $img1.innerHeight();
-// const img2Height = $img2.innerHeight();
+const img1Height = $img1.innerHeight();
+const img2Height = $img2.innerHeight();
 
 const feature1Poz = $feature1.offset().top;
 const feature2Poz = $feature2.offset().top;
 const feature3Poz = $feature3.offset().top;
 const mottoPoz = $motto.offset().top;
 const hobbyWrapperPoz = $hobbyWrapper.offset().top;
-// const img1Poz = $img1.offset().top;
-// const img2Poz = $img2.offset().top;
+const img1Poz = $img1.offset().top;
+const img2Poz = $img2.offset().top;
 
 if(scrollPoz > feature1Poz + feature1Height - windowHeight*1.3){
     $feature1.addClass("activeFeature");
@@ -51,12 +51,12 @@ if(scrollPoz > mottoPoz + mottoHeight - windowHeight*1.3){
 if(scrollPoz > hobbyWrapperPoz + hobbyWrapperHeight - windowHeight*1.5){
     $hobbyWrapper.addClass("activeWrapper");
 }
-// if(scrollPoz > img1Poz + img1Height - windowHeight){
-//     $img1.style.transform= `translateX(0)`;
-// }
-// if(scrollPoz > img2Poz + img2Height - windowHeight){
-//     $img2.style.transform= `translateX(0)`;
-// }
+if(scrollPoz > img1Poz + img1Height - windowHeight){
+    $img1.addClass("activeImg");
+}
+if(scrollPoz > img2Poz + img2Height - windowHeight){
+    $img2.addClass("activeImg");
+}
 
 if(scrollPoz < 200){
     $feature1.removeClass("activeFeature");
@@ -65,6 +65,7 @@ if(scrollPoz < 200){
     $mottoH1.removeClass("activeH1");
     $mottoP.removeClass("activeP");
     $hobbyWrapper.removeClass("activeWrapper");
-    // ($img1,$img2).removeClass("activeImg");
+    $img1.removeClass("activeImg");
+    $img2.removeClass("activeImg");
 }
 })
